@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.triangle {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #ff4e43;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: #ffa400;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+.circles {
+    width: 10px;
+    height: 10px;
+    background-color: #0cce6a;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+
+ 
+
+
+#wrapper_values {
+    display: flex;
+    flex-flow: row nowrap; 
+    width: 120px;
+  }
+
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap; 
+    width: 50px;
+  }
+  
+  .single-chart { 
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #fee2e2;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #dc2626;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill:#dc2626 ;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
